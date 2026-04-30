@@ -1,0 +1,136 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #0f172a;
+  border-bottom: 1px solid #1e293b;
+  position: sticky;
+  top: 0;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.navbar nav a {
+  margin-left: 1.5rem;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.navbar nav a:hover {
+  color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-name {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-tagline {
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background: #38bdf8;
+  color: #0f172a;
+}
+
+.btn-secondary {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+/* Sections */
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* About */
+.about-text {
+  max-width: 600px;
+  color: #cbd5f5;
+}
+
+/* Contact */
+.contact-list {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+.contact-list li {
+  margin-bottom: 0.5rem;
+  color: #94a3b8;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid #1e293b;
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: 2rem;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar nav {
+    margin-top: 0.5rem;
+  }
+}
